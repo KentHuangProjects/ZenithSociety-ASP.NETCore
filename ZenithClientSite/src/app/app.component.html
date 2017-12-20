@@ -8,6 +8,25 @@
 	<table border="1" class="table">
 
 		<thead>
+			<tr style="background: cyan;">
+		<th>Date</th>
+		<th>Time</th>
+		<th>Activity</th>
+	</tr>
+		</thead>
+		<tbody>
+		<tr *ngFor="let e of thisevents">
+			<td>{{e.theDate}} </td>
+			<td>{{e.fromtime}} - {{e.totime}}</td>
+			<td>{{e.activityCategory.activityDescription}}</td>
+
+		</tr>
+		</tbody>
+
+	</table>
+<!-- 	<table border="1" class="table">
+
+		<thead>
 			<tr>
 		<th>eventFromDateTime</th>
 		<th>eventToDateTime</th>
@@ -23,9 +42,10 @@
 		</tr>
 		</tbody>
 
-	</table>
+	</table> -->
 </div>
 
+<p>Full site:<a href="http://zenithnetcore.azurewebsites.net/"> Zenith Society </a><p>
 
-Last updated: {{myDate | amTimeAgo}}
+
 

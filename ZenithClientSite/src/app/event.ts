@@ -12,5 +12,9 @@ export class Event {
 	avtivityDes:string;
 	ef:Date;
 	et:Date;
+	weekday :string;
+	fromtime:string;
+	totime:string;
+	theDate:string;
 
 }
